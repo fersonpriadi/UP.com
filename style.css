@@ -1,0 +1,102 @@
+* {
+    font-family: 'Croissant One', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Skranji', cursive;
+    scroll-behavior: smooth;
+}
+html {
+    background-color: aqua;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3rem;
+    background-color: rgb(12, 219, 219);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top:0;
+    z-index: 0;
+    box-shadow: 0px 0px 7px rgb(34, 87, 87);
+}
+.nav-menu h5 {
+    font-size: 35px;
+}
+
+.nav-menu .menu-list a {
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+    font-size: 20px;
+}
+.landing-home {
+    text-align: center;
+    margin-top: 12rem;
+}
+.nav-layanan {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top : 5rem;
+    align-items: center;
+}
+.nav-layanan-list {
+    width: 30rem;
+}
+.nav-layanan-list-input div {
+    margin-bottom : 15px;
+}
+.nav-informasi {
+    display: flex;
+    justify-content: center;
+    margin-top : 7rem;
+    text-align: center;
+    column-gap: 3rem;
+}
+.nav-informasi img {
+    width: 15rem;
+    box-shadow: 0 0 5px  rgb(34, 87, 87);
+}
+.nav-informasi a {
+    text-decoration: none;
+    background-color: aliceblue;
+    color: blue;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px red;
+}
+.nav-informasi img:hover {
+    -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  cursor: progress;
+}
+.nav-pesan {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+.nav-pesan div {
+    margin-top : 10px;
+}
+.nav-pesan div button {
+    margin-top : 25px;
+    width: 100%;
+    height: auto;
+}
+.footer {
+    background-color: rgb(12, 219, 219);
+    padding-top : 10px;
+    padding-bottom : 30px;
+    margin-top : 30px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-menu a {
+    text-decoration: none;
+    color: black;
+    margin-left: 4rem;
+}
