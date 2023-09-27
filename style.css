@@ -1,7 +1,6 @@
 * {
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 html {
     background-color: aqua;
@@ -26,8 +25,14 @@ html {
 .nav-menu .menu-list a {
     text-decoration: none;
     color: black;
-    margin-right: 45px;
+    /* margin-right: 45px; */
     font-size: 20px;
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 .landing-home {
     text-align: center;
@@ -116,11 +121,14 @@ html {
 @media (max-width: 629px ){
     .menu-list {
         display: flex ;
-        flex-direction: flex;
-        justify-content: first baseline;
+        gap: 15px;
+        /* font-size: 5px; */
     }
-    .menu-list a {
-        margin-right: -10rem;
+    .nav-layanan-list {
+        width: 80%;
+    }
+    .nav-layanan-list-input {
+        width: 80%;
     }
 }
 @media (max-width: 675px){
@@ -131,8 +139,6 @@ html {
     .menu-list {
         display: flex;
         width: 100%;
-        min-width: max-content;
-
     }
     .nav-layanan {
         display: flex;
