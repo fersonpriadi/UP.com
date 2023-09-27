@@ -27,6 +27,9 @@ html {
     color: black;
     /* margin-right: 45px; */
     font-size: 20px;
+    box-shadow: 0px 0px 7px rgb(34, 87, 87);
+    padding: 6px;
+    border-radius: 4px;
 }
 .menu-list {
     display: flex;
@@ -121,8 +124,23 @@ html {
 @media (max-width: 629px ){
     .menu-list {
         display: flex ;
-        gap: 15px;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        gap : 10px;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        /* gap: 1px; */
         /* font-size: 5px; */
+    }
+    .nav-menu {
+        width: 100%;
+    }
+    .landing-home h4 {
+        margin-top : 25rem;
+    }
+    .landing-home-h4 {
+        margin-bottom: -65vh;
     }
     .nav-layanan-list {
         width: 80%;
@@ -130,10 +148,37 @@ html {
     .nav-layanan-list-input {
         width: 80%;
     }
+    .footer {
+        width: 100%;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    .footer-menu a {
+        margin-left : 0;
+    }
+   
+    .nav-menu {
+        position: fixed;
+        height:auto;
+        left : 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-list a {
+        gap : 40px;
+    }
 }
 @media (max-width: 675px){
     .nav-menu {
-        display: block;
+        display: flex;
         row-gap: 0;
     }
     .menu-list {
