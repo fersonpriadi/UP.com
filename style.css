@@ -1,13 +1,14 @@
 * {
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 html {
     background-color: aqua;
 }
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: -3rem;
     background-color: rgb(12, 219, 219);
@@ -72,6 +73,8 @@ html {
     display: flex;
     justify-content: center;
     width: auto;
+    gap: 5rem;
+    margin-top : 10rem;
 }
 .nav-pesan div {
     margin-top : 10px;
@@ -80,6 +83,18 @@ html {
     margin-top : 25px;
     width: 100%;
     height: auto;
+}
+.container-input-pesan {
+    box-shadow: 0 0 5px  rgb(34, 87, 87);
+    padding-left : 2rem;
+    padding-right: 2rem;
+}
+.nav-pesan iframe {
+    width: 40rem;
+    height: 30rem;
+}
+.cart-img-style {
+
 }
 .footer {
     background-color: rgb(12, 219, 219);
@@ -97,4 +112,47 @@ html {
     text-decoration: none;
     color: black;
     margin-left: 4rem;
+}
+@media (max-width: 629px ){
+    .menu-list {
+        display: flex ;
+        flex-direction: flex;
+        justify-content: first baseline;
+    }
+    .menu-list a {
+        margin-right: -10rem;
+    }
+}
+@media (max-width: 675px){
+    .nav-menu {
+        display: block;
+        row-gap: 0;
+    }
+    .menu-list {
+        display: flex;
+        width: 100%;
+        min-width: max-content;
+
+    }
+    .nav-layanan {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .nav-layanan-list p {
+        text-align: justify;
+    }
+    .nav-informasi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .nav-pesan {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-pesan iframe {
+        width: 100%;
+    }
 }
